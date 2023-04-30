@@ -1,10 +1,10 @@
 interface IUrlState {
-    jsonOutput: object | string;
+    jsonOutput: string | unknown;
     inputText: string;
     errorMessage: string;
 }
 
-type TypeUrlData = object | string;
+type TypeUrlData = string | unknown;
 
 export const useUrlStore = defineStore("urlStore", {
     state: (): IUrlState => ({
@@ -14,15 +14,10 @@ export const useUrlStore = defineStore("urlStore", {
     }),
 
     getters: {
-        // double: state => state.n * 2,
         href: state => new URL(state.inputText).href,
     },
 
     actions: {
-        // getData(data: object): object {
-        //     return Array.isArray(data) && data.length === 1 ? data[0] : data;
-        // },
-
         async visualizeJson(): Promise<void> {
             try {
                 const { data } = await useFetch<TypeUrlData>(this.href);

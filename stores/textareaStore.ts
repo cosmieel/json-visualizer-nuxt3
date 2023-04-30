@@ -1,5 +1,5 @@
 interface ITextareaState {
-    jsonOutput: object | string;
+    jsonOutput: string | unknown;
     inputText: string;
     errorMessage: string;
 }

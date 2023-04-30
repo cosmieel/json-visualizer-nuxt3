@@ -4,6 +4,21 @@
     </NuxtLayout>
 </template>
 
+<script setup lang="ts">
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCPtOf1UFHbuGsVGUkjFNTQklZL4hldPgM",
+  authDomain: "visualijson-app-nuxt3.firebaseapp.com",
+  projectId: "visualijson-app-nuxt3",
+  storageBucket: "visualijson-app-nuxt3.appspot.com",
+  messagingSenderId: "897483817183",
+  appId: "1:897483817183:web:3df02a2cf1624dde9ba96a"
+};
+
+const app = initializeApp(firebaseConfig);
+</script>
+
 <style lang="scss">
 * {
     margin: 0;

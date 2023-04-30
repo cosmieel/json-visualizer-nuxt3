@@ -3,7 +3,7 @@ defineProps<{
     node: object | string
 }>()
 
-function isNodeContainObject(object: string | number | boolean | object): boolean {
+function isNodeContainObject(object: string | unknown): boolean {
     return typeof object === "object" && object !== null;
 }
 function getNodeContent(value: string): string {
