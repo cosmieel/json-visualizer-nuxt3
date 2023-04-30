@@ -1,11 +1,13 @@
 # VisualiJSON
 
+#### _App page: [VisualiJSON](https://visualijson-app-nuxt3.web.app/)_
+#### Nuxt 3, Pinia, Typescript
+
 Application for creating a tree from JavaScript Object Notation (JSON) format.
 
-### Nuxt 3, Pinia, Typescript
 
-Old SPA-version:
-#### https://github.com/cosmieel/json-visualizer
+
+_[Old SPA-version](https://github.com/cosmieel/json-visualizer)_
 
 #### Project setup
 
@@ -16,7 +18,7 @@ yarn install
 #### Compiles and hot-reloads for development
 
 ```
-yarn serve
+yarn dev
 ```
 
 #### Compiles and minifies for production
@@ -25,14 +27,20 @@ yarn serve
 yarn build
 ```
 
-#### Run your unit tests
+#### Compiles and minifies for deploy
 
 ```
-yarn test:unit
+yarn generate
 ```
 
 #### Lints and fixes files
 
 ```
 yarn lint
+```
+
+#### Deploy
+
+```
+firebase deploy
 ```
